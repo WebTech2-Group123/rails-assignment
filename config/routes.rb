@@ -1,24 +1,26 @@
 Rails.application.routes.draw do
 
+  # articles
   resources :articles
 
-  get 'test_form/index'
-  post 'test_form/create'
-
+  # home
   get 'welcome/index'
-  get 'welcome/about_us'
   root 'welcome#index'
 
+  # profile
   get 'profile' => 'profile#index'
   get 'profile/edit'
   put 'profile/edit'
 
+  # session
   get 'login' => 'sessions#index'
   post 'login' => 'sessions#login'
   delete 'logout' => 'sessions#logout'
 
+  # signup
   get 'signup' => 'signup#index'
   post 'signup' => 'signup#signup'
+
 
 # The priority is based upon order of creation: first created -> highest priority.
 # See how all your routes lay out with "rake routes".

@@ -2,9 +2,9 @@
 
 Tasks:
  * [ ] User registration:
-    * [ ] form
+    * [x] form
     * [ ] email verification (optional)
  * [ ] Profile:
-    * [ ] view
+    * [x] view
     * [ ] edit
  * [ ] Comments (optional)
