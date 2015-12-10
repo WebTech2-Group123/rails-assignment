@@ -14,12 +14,12 @@ module SessionsHelper
   end
 
   #return true if user is logged in already
-  def logged_in()
+  def logged_in
     !current_user.nil?
   end
 
   #destroy the session and every detail about the user
-  def log_out()
+  def log_out
     session.delete(:user_id)
     @current_user = nil
   end

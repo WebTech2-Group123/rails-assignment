@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
 
   # login user with credentials
   def login
-    @user = User.find_by(name: params[:session][:name].downcase)
+    @user = User.find_by(email: params[:session][:email].downcase)
 
     if @user && @user.authenticate(params[:session][:password])
       #Log the user in and regirect to the article page
