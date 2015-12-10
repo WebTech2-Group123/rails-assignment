@@ -1,0 +1,27 @@
+<div class="container">
+  <h3 class="page-header">Your profile</h3>
+
+  <table class="table table-striped table-hover table-bordered">
+    <tr>
+      <th>Name</th>
+      <td><%= @profile.name %></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><%= @profile.email %></td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td><%= @profile.address %></td>
+    </tr>
+    <tr>
+      <th>Picture URL -> TODO (render image)</th>
+      <td><%= @profile.picture %></td>
+    </tr>
+  </table>
+
+  <p>
+      <%= link_to 'Edit Profile', profile_edit_url, class: 'btn btn-primary' %>
+  </p>
+
+</div>

@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   get 'welcome/about_us'
   root 'welcome#index'
 
+  get 'profile' => 'profile#index'
+  get 'profile/edit'
+  put 'profile/edit'
 
   get 'login' => 'sessions#index'
   post 'login' => 'sessions#login'
