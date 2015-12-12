@@ -6,5 +6,5 @@ Tasks:
     * [ ] email verification (optional)
  * [ ] Profile:
     * [x] view
-    * [ ] edit
+    * [x] edit
  * [ ] Comments (optional)
