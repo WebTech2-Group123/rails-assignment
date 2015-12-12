@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'profile' => 'profile#index'
   get 'profile/edit'
   put 'profile/edit'
+  post 'profile' => 'profile#update'
 
   # session
   get 'login' => 'sessions#index'
