@@ -1,4 +1,7 @@
-<h1>Ok!</h1>
+<div class="container">
+  <h3 class="page-header">Signup confirmed</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis dolor dolorum earum in incidunt iste
-  itaque iusto labore libero, odio praesentium reprehenderit rerum saepe ullam vel! Aperiam, exercitationem?</p>
+  <p>Please login with your email <%= @user.email %> and password</p>
+
+  <p><%= link_to 'Login', login_path, class: 'btn btn-primary' %></p>
+</div>
