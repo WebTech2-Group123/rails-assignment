@@ -13,6 +13,12 @@
   <!--form-->
   <%= form_for :user, class: 'form form-horizontal', url: signup_path(@user), method: :post do |f| %>
 
+      <!--name-->
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, placeholder: 'Enter your name', class: 'form-control' %>
+      </div>
+
       <!--email-->
       <div class="form-group">
         <%= f.label :email %>
@@ -29,12 +35,6 @@
       <div class="form-group">
         <%= f.label :password %>
         <%= f.password_field :password, placeholder: 'Enter a password', class: 'form-control' %>
-      </div>
-
-      <!--name-->
-      <div class="form-group">
-        <%= f.label :name %>
-        <%= f.text_field :name, placeholder: 'Enter your name', class: 'form-control' %>
       </div>
 
       <!--address-->
