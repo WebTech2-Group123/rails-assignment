@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
 
-  # email must be present
+  # email must be present, be an email and be confirmed
   validates :email, presence: {message: 'must be present, please specify one.'}
+  validates :email, email: true
   validates :email, confirmation: true
   validates :email_confirmation, presence: true
 
