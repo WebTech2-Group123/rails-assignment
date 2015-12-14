@@ -9,10 +9,10 @@ class ProfileController < ApplicationController
   end
 
   def edit
-  	@profile = current_user
+    @profile = current_user
   end
 
-   # post action for editing article
+  # post action for editing article
   def update
 
     if current_user.update(edit_params)
@@ -23,6 +23,6 @@ class ProfileController < ApplicationController
   end
 
   def edit_params
-    params.require(:user).permit(:name, :email, :address)
+    params.require(:user).permit(:name, :email, :name, :address)
   end
 end

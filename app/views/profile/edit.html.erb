@@ -1,17 +1,17 @@
 <div class="container">
   <h3 class="page-header">Your profile</h3>
+
+  <!--errors-->
   <% if @profile && @profile.errors.any? %>
-  <div class="alert alert-danger">
-    <% @profile.errors.full_messages.each do |error| %>
-    <span><%= error %></span>
-    <% end %>
-  </div>
+      <div class="alert alert-danger">
+        <% @profile.errors.full_messages.each do |error| %>
+            <span><%= error %></span>
+        <% end %>
+      </div>
   <% end %>
 
-    <!--form-->
+  <!--form-->
   <%= form_for :user, class: 'form form-horizontal', url: profile_path(@user), method: :post do |f| %>
-
-
 
       <!--Name-->
       <div class="form-group">
@@ -37,8 +37,6 @@
       </div>
 
   <% end %>
-
-
 
 
 </div>
