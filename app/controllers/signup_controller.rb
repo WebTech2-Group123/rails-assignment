@@ -15,5 +15,5 @@ end
 
 # get user object from http params
 def user_params
-  params.require(:user).permit(:email, :password)
+  params.require(:user).permit(:email, :email_confirmation, :password, :name, :picture, :address)
 end

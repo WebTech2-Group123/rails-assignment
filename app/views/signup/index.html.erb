@@ -16,13 +16,37 @@
       <!--email-->
       <div class="form-group">
         <%= f.label :email %>
-        <%= f.text_field :email, placeholder: 'Enter your email...', class: 'form-control' %>
+        <%= f.text_field :email, placeholder: 'Enter your email', class: 'form-control' %>
+      </div>
+
+      <!--email confirmation-->
+      <div class="form-group">
+        <%= f.label :email_confirmation %>
+        <%= f.text_field :email_confirmation, placeholder: 'Re-enter your email', class: 'form-control' %>
       </div>
 
       <!--password-->
       <div class="form-group">
         <%= f.label :password %>
-        <%= f.password_field :password, placeholder: 'Enter a password...', class: 'form-control' %>
+        <%= f.password_field :password, placeholder: 'Enter a password', class: 'form-control' %>
+      </div>
+
+      <!--name-->
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, placeholder: 'Enter your name', class: 'form-control' %>
+      </div>
+
+      <!--picture-->
+      <div class="form-group">
+        <%= f.label :picture %>
+        <%= f.text_field :picture, placeholder: 'Enter your picture URL', class: 'form-control' %>
+      </div>
+
+      <!--address-->
+      <div class="form-group">
+        <%= f.label :address %>
+        <%= f.text_field :address, placeholder: 'Enter your address', class: 'form-control' %>
       </div>
 
       <!--submit-->
@@ -31,7 +55,5 @@
       </div>
 
   <% end %>
-
-  <p>TODO: add other fields as well</p>
 
 </div>
