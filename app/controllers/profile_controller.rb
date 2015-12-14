@@ -14,6 +14,7 @@ class ProfileController < ApplicationController
 
   # post action for editing article
   def update
+    @profile = current_user
 
     if current_user.update(edit_params)
       redirect_to profile_path
@@ -23,6 +24,6 @@ class ProfileController < ApplicationController
   end
 
   def edit_params
-    params.require(:user).permit(:name, :email, :name, :address)
+    params.require(:user).permit(:name, :name, :address)
   end
 end
